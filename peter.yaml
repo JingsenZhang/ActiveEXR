@@ -1,0 +1,60 @@
+# data params
+dataset: 'trip'
+split: '5b-1w-1w'
+unique: 'unique'
+
+# sampling params
+method: 'bo'
+can_num: 10000
+select_num: 1000
+cost: 100000
+sort: True
+
+# entropy params
+protect: 1e-12
+en_weight: 1
+
+# influence function params
+damp: 0.1
+scale: 25
+depth: 1
+train_num: 20
+topK: 0
+influ_bs: 20
+in_weight: 1
+
+# model params
+model: 'PETER'
+emsize: 256
+hidden_size: 256
+nlayers: 2
+nhead: 2
+dropout_prob: 0.2
+rating_weight: 0.1
+text_weight: 10.0
+context_weight: 10.0
+l2_weight: 0
+seq_max_len: 15
+peter_mask: True
+use_feature: False
+
+# running params
+learner: 'sgd'
+lr: 1.0
+weight_decay: 0.0
+clip: 1.0
+epochs: 100
+seed: 1111
+batch_size: 256
+bert_bs: 0
+cuda: True
+gpu_id: 2
+checkpoint: './peter/'
+generated_file_path: '_peter_reviews.txt'
+vocab_size: 20000
+endure_times: 2
+
+# rating pretrain
+rating_epochs: 100
+rating_lr: 0.1
+rating_learner: sgd
