@@ -4,7 +4,7 @@ This is the implementation for paper:
 
 ## Overview
 In this paper, we study a novel problem in the field of explainable recommendation, that is, “given a limited budget to incentivize users to provide behavior explanations, how to effectively collect data such that the downstream models can be better optimized?” To solve this problem, we propose an active learning framework for recommender system, which consists of an acquisition function for sample collection and an explainable recommendation model to provide the final results. We consider both uncertainty and influence based strategies to design the acquisition function, which can determine the sample effectiveness from complementary perspectives.
-<img src="https://github.com/JingsenZhang/ActiveEXR/blob/master/asset/graph.png" width="800px"/>
+<img src="https://github.com/JingsenZhang/ActiveEXR/blob/master/asset/graph.png" width="500px"/>
 
 ## Requirements
 - Python 3.7
